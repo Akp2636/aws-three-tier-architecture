@@ -10,7 +10,7 @@ The application EC2 instances have **no public IP addresses**, the database is *
 
 ## Architecture Overview
 
-![AWS Three Tier Architecture](images/architecture-diagram.png)
+![AWS Three Tier Architecture](images/arch.png)
 
 ### Traffic Flow
 
