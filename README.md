@@ -10,28 +10,7 @@ The application EC2 instances have **no public IP addresses**, the database is *
 
 ## Architecture Overview
 
-```text
-                         Internet
-                            |
-                            v
-                    Internet Gateway
-                            |
-                            v
-              Application Load Balancer
-                   /                 \
-                  v                   v
-        Private EC2 - AZ A    Private EC2 - AZ B
-                  \                   /
-                   \                 /
-                    v               v
-                     Amazon RDS MySQL
-                         (Private)
-
-Private EC2 ---> NAT Gateway ---> Internet
-     |
-     +---- EC2 Instance Connect Endpoint
-           for private administration
-```
+![AWS Three Tier Architecture](images/architecture-diagram.png)
 
 ### Traffic Flow
 
